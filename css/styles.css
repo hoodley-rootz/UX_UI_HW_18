@@ -1,0 +1,123 @@
+body {
+    background-image: radial-gradient(ellipse, #FFCCEB, #EBDFFF);
+    /*background-image: linear-gradient(to bottom right, #FFCCEB, #EBDFFF);*/
+}
+.nav {
+    display:flex;
+    justify-content:flex-end;
+    align-items: center;
+}
+
+.nav p {
+    padding-left:20px;
+    padding-right:20px;
+}
+
+.navigation {
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.logo {
+    width:23%;
+    padding:1%;
+    /*background-color:lightblue;*/
+}
+
+/*nav {
+    width: 71%;
+    padding:1%;
+}*/
+
+ul {
+    width:50%;
+    font-family: 'Trirong', serif;
+    font-size:20px;
+    display:inline-block;
+}
+
+.heroImg {
+    height:750px; 
+    padding:1%;
+    /*background-color:aqua;*/
+    
+}
+
+.content img {
+    /* display:flex; */
+    width:60%;
+    /*outline: 3px solid red;*/
+    
+}
+
+.blurb {
+    width: 35%;
+    /*outline: 3px solid red;*/
+    padding:0px; /*I want this to fully align to the bottom*/
+}
+
+.content {
+    display:flex;
+    align-items: flex-end;
+    justify-content:center;
+    width:100%;
+    height:75vh;
+}
+
+p {
+    font-family: 'Trirong', serif;
+    font-size:20px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+button {
+    background-color: rgb(255,160,228);
+    border:none;
+    padding:2px 35px;
+    border-radius: 30px;
+    font-family: 'Trirong', serif;
+    font-size:18px;
+    height:52px; /*Need to fix this, ask in class Monday*/
+    align-items: center;
+}
+.caseStudy {
+    height: 700px;
+    padding:4%;
+
+}
+.caseStudy h2 {
+    font-family: 'Trirong', serif;
+    font-size:54px;
+    font-weight:300;
+    padding-bottom:0%; /*padding issue again*/
+    margin-block-end: 0em;
+}
+
+.caseStudy div {
+    height: 455px;
+    width: 1030px;
+    border-radius: 220px;
+    background-color:  rgb(255,160,228);
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
+.footer h3 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 64px;
+    text-align:center;
+}
+.footerImg {
+    display:flex;
+    justify-content:center;
+}
+.footer img {
+    display:flex;
+    padding-left:25px;
+    padding-right:25px;
+    padding-bottom:40px;
+    
+}
