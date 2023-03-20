@@ -60,6 +60,11 @@ ul {
     /*I want this to fully align to the bottom*/
 }
 
+.blurbSkills {
+    width:35%;
+    padding-bottom:1%;
+}
+
 .content {
     display: flex;
     align-items: flex-end;
@@ -79,6 +84,12 @@ h2 {
     font-family: 'Trirong', serif;
     font-size: 54px;
     font-weight: 300;
+}
+
+h3 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 36px;
+    text-align: center;
 }
 
 span {
@@ -118,8 +129,9 @@ button {
 }
 
 .caseStudyImagePurple{
-    height: 455px;
-    width: 1030px;
+    height: 50vh;
+    width: 100%;
+    max-width: 1030px;
     border-radius: 220px;
     margin-left: auto;
     margin-right: auto;
@@ -128,8 +140,9 @@ button {
 }
 
 .caseStudyImagePink{
-    height: 455px;
-    width: 1030px;
+    height: 50vh;
+    width: 100%;
+    max-width: 1030px;
     border-radius: 220px;
     margin-left: auto;
     margin-right: auto;
@@ -219,6 +232,39 @@ button {
     margin: 5%;
 }
 
+
+/* My Skills CSS */
+
+.skills {
+    height: 1400px;
+    width: 45%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 440px 440px 440px;
+    grid-template-areas:
+    "one two"
+    "three four"
+    "five six";
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:10%;
+}
+
+.skillBox {
+    width:400px;
+    height:400px;
+    background-color: rgb(255, 160, 228);
+    border-radius: 75px;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+.skillIcon {
+    width:114px;
+    height:114px;
+}
 /* Footer CSS */
 .footer h3 {
     font-family: 'Abril Fatface', cursive;
@@ -237,4 +283,27 @@ button {
     padding-right: 25px;
     padding-bottom: 40px;
 
+}
+
+
+
+
+/* Media Queries */
+
+@media only all and (max-width:700px) {
+
+    .content {
+        display:block;
+    }
+
+    .hero {
+        width:100%;
+        padding-top:40vh;
+    }
+
+    .blurb {
+        width:100%;
+        margin:5%;
+        
+    }
 }
