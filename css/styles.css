@@ -84,6 +84,8 @@ h2 {
     font-family: 'Trirong', serif;
     font-size: 54px;
     font-weight: 300;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
 }
 
 h3 {
@@ -219,6 +221,8 @@ button {
 
 .aboutText h2 {
     display: inline-block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
 }
 
 .aboutText p {
@@ -230,6 +234,12 @@ button {
     width: 42%;
     border-radius: 42px;
     margin: 5%;
+}
+
+.aboutText::first-letter {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    initial-letter: 6;
 }
 
 
@@ -306,4 +316,6 @@ button {
         margin:5%;
         
     }
+
+
 }
