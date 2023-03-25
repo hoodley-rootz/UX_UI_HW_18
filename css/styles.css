@@ -18,7 +18,7 @@ body {
 .hamburger{
     position:absolute;
     right:20px;
-    top:20px;
+    top:10px;
 }
 
 .menuIcon {
@@ -86,7 +86,7 @@ body {
 }
 
 .heroImg {
-    height: 850px;
+    height: 1000px;
     padding: 4%;
     /*background-color:aqua;*/
 
@@ -113,12 +113,7 @@ h3 {
     text-align: center;
 }
 
-span {
-    font-family: 'Trirong', serif;
-    font-size: 54px;
-    font-weight: 300;
-    margin-block-end: 0em;
-}
+
 
 button {
     background-color: rgb(255, 160, 228);
@@ -189,35 +184,50 @@ button {
 }
 /* About me CSS */
 
+/* ABOUT HERO */
+.aboutHero {
+    display:flex;
+    flex-direction:column;
+}
+
 #portrait {
-    max-width: 45%;
+    max-width: 60%;
     border-radius: 500px 500px 500px 0px;
     max-height: 70vh;
+    order:1;
 }
-
 
 #niceToMeetYou {
-    width: 55%;
+    width: 100%;
     max-height: 70%;
-    max-width: 55%;
     object-fit: scale-down;
-
+    order:2;
 }
 
+/* ABOUT MODALS */
+
+body {
+    margin:0;
+}
+
+span {
+    font-family: 'Trirong', serif;
+    font-size: 54px;
+    font-weight: 300;
+    margin-block-end: 0em;
+}
 .aboutMe {
     height: 120%svh;
-    padding: 4%;
     display: flex;
     justify-content: center;
 }
 
 .modal {
     height: 85vh;
-    width: 65vw;
+    width: 100%;
     max-height: 900px;
     max-width: 1200.21px;
     background-color: rgb(255, 160, 228);
-    border-radius: 42px;
     margin-top: 10%;
     margin-bottom: 5%;
     display: flex;
@@ -227,11 +237,20 @@ button {
 .aboutText {
     display: inline-block;
     margin-right: 5%;
+    line-height:170%;
 }
 
 .aboutTextLeft {
     display: inline-block;
     margin-left: 5%;
+}
+
+.modal p {
+    font-size:15px;
+}
+
+.modal span {
+    font-size:40px;
 }
 
 .aboutText h2 {
@@ -245,17 +264,12 @@ button {
 }
 
 .illustration {
-    height: 83%;
+    height: auto;
     width: 42%;
     border-radius: 42px;
     margin: 5%;
 }
 
-.aboutText::first-letter {
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    initial-letter: 6;
-}
 
 
 /* My Skills CSS */
@@ -315,7 +329,12 @@ button {
 
 /* Media Queries */
 
-@media only all and (min-width: 800px) {
+@media only all and (min-width: 900px) {
+
+.navigation {
+margin:3px;
+}   
+
 .nav .desktop {
     display: flex;
 }
@@ -394,6 +413,57 @@ button {
     width: 40%;
     padding: 1%;
     /*background-color:lightblue;*/
+}
+
+/* ABOUT PAGE */
+
+#portrait {
+    max-width: 45%;
+    border-radius: 500px 500px 500px 0px;
+    max-height: 70vh;
+    order:2;
+}
+
+#niceToMeetYou {
+    width: 55%;
+    max-height: 80%;
+    max-width: 55%;
+    object-fit: scale-down;
+    order:1;
+}
+
+.aboutHero {
+    padding-top:10vh;
+    display:flex;
+    flex-direction:row;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    height: 75vh;
+}
+
+.modal {
+    height: 85vh;
+    width: 65vw;
+    max-height: 900px;
+    max-width: 1200.21px;
+    background-color: rgb(255, 160, 228);
+    border-radius: 42px;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    display: flex;
+    align-items: center;
+}
+
+.modal p {
+    font-size:20px;
+}
+.modal span {
+    font-size:54px;
+}
+
+.aboutText {
+    line-height:200%;
 }
 }
 

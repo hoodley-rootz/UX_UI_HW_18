@@ -17,16 +17,28 @@
             <p>Hadley Takashi Reetz</p>
         </div>
         <nav class="nav">
-            <p id="about">about</p>
-            <p id="skills">skills</p>
-            <p id="work">work</p>
-            <p id="contact">contact</p>
-            <button>Download Resume</button>
+            <div class="desktop">
+                <p>about</p>
+                <p>skills</p>
+                <p>work</p>
+                <p>contact</p>
+                <button>Download Resume</button>
+            </div>
+            <div class="hamburger">
+                <img class="menuIcon" src="../images/Hamburger-Menu.png" onclick="this.parentNode.classList.toggle('open')" alt="hamburger icon">
+                <div class="hamburgerMenu">
+                    <p>about</p>
+                    <p>skills</p>
+                    <p>work</p>
+                    <p>contact</p>
+                    <button>Download Resume</button>
+                </div>
+            </div>
         </nav>
     </header>
 
     <section class="heroImg">
-        <div class="content">
+        <div class="aboutHero">
             <img id="niceToMeetYou" src="../images/niceToMeetYou.png">
             <img id="portrait" src="../images/portrait.jpeg">
             
