@@ -4,9 +4,48 @@ body {
 }
 
 .nav {
+    width:100%;
+}
+.nav .desktop {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    display:none;
+}
+
+
+
+.hamburger{
+    position:absolute;
+    right:20px;
+    top:20px;
+}
+
+.menuIcon {
+    background-image: url("../images/Hamburger-Menu.png");
+    background-repeat:no-repeat;
+    background-size:cover;
+    height:50px;
+    width:50px;
+}
+
+.hamburgerMenu{
+    display:none;
+    position:relative;
+    left:-45px;
+    top:48px;
+    width: 100vw;
+}
+
+.open .hamburgerMenu {
+    display:block;
+    width:100%;
+    text-align:center;
+}
+
+.open .menuIcon {
+    background-image: url("../images/Close.png");
+    background-repeat: no-repeat;
 }
 
 .nav p {
@@ -21,7 +60,7 @@ body {
 }
 
 .logo {
-    width: 23%;
+    width: 80%;
     padding: 1%;
     /*background-color:lightblue;*/
 }
@@ -31,46 +70,26 @@ body {
     padding:1%;
 }*/
 
-
-ul {
-    width: 50%;
-    font-family: 'Trirong', serif;
-    font-size: 20px;
-    display: inline-block;
-}
-
-.heroImg {
-    height: 780px;
-    padding: 1%;
-    /*background-color:aqua;*/
-
+.content {
+    display:block;
 }
 
 .hero {
-    /* display:flex; */
-    width: 60%;
-    /*outline: 3px solid red;*/
-
+    width:100%;
+    padding-top:40vh;
 }
 
 .blurb {
-    width: 35%;
-    /*outline: 3px solid red;*/
-    padding: 0px;
-    /*I want this to fully align to the bottom*/
+    width:100%;
+    margin-top:5%;
+
 }
 
-.blurbSkills {
-    width:35%;
-    padding-bottom:1%;
-}
+.heroImg {
+    height: 850px;
+    padding: 4%;
+    /*background-color:aqua;*/
 
-.content {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    width: 100%;
-    height: 75vh;
 }
 
 p {
@@ -109,16 +128,14 @@ button {
     font-family: 'Trirong', serif;
     font-size: 18px;
     height: 52px;
-    /*Need to fix this, ask in class Monday*/
     align-items: center;
 }
 
+/* CASE STUDY HOME PAGE STYLING */
+
 .caseStudy {
     height: 700px;
-    padding-left: 15%;
-    padding-right: 15%;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding: 5% 5%;
 }
 
 .caseStudy h2 {
@@ -130,47 +147,45 @@ button {
     margin-block-end: 0em;
 }
 
-.caseStudyImagePurple{
-    height: 50vh;
+.caseStudyBackground{
+    height: 500px;
     width: 100%;
     max-width: 1030px;
     border-radius: 220px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 5%;
-    background-color: rgb(184, 147, 243);
-}
-
-.caseStudyImagePink{
-    height: 50vh;
-    width: 100%;
-    max-width: 1030px;
-    border-radius: 220px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5%;
-    background-color: rgb(255, 160, 228);
     display:flex;
     justify-content:center;
     align-items:center;
 }
 
-#campToCrag {
-    height:725px;
-    position:relative;
-    top:-115px;
-    left:147.5px;
+.Pink{
+    background-color: rgb(255, 160, 228);
 }
 
-#DOE {
-    height: 431px;
+.Purple {
+    background-color: rgb(184, 147, 243);
 }
 
-#CCUS {
-    height: 445px;
-    position:relative;
-    top:20px;
-    left:158px;
+.caseStudyImage {
+    background-size:contain;
+    height:430px;
+    width: 50vw;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.campToCrag {
+    background-image: url("../images/camptocragmobile.png");
+}
+
+.DOE {
+    background-image: url("../images/DOE-Mobile.png");
+}
+
+.CCUS {
+    background-image: url("../images/CCUS-Mobile.png");
 }
 /* About me CSS */
 
@@ -300,6 +315,91 @@ button {
 
 /* Media Queries */
 
+@media only all and (min-width: 800px) {
+.nav .desktop {
+    display: flex;
+}
+
+.hamburger {
+    display:none;
+}
+
+.heroImg {
+    height: 780px;
+    padding: 1%;
+    /*background-color:aqua;*/
+
+}
+
+.hero {
+    /* display:flex; */
+    width: 60%;
+    /*outline: 3px solid red;*/
+
+}
+
+.blurb {
+    width: 35%;
+    /*outline: 3px solid red;*/
+    padding: 0px;
+    margin:0px;
+    /*I want this to fully align to the bottom*/
+}
+.content {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    height: 75vh;
+}
+
+.caseStudy {
+    height: 700px;
+    padding: 5% 15%;
+}
+
+.caseStudyImage {
+    background-size:contain;
+    height:450px;
+    width: 50vw;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.campToCrag {
+    background-image: url("../images/camptocrag.png");
+}
+
+.DOE {
+    background-image: url("../images/camptocrag.png");
+}
+
+.CCUS {
+    background-image: url("../images/camptocrag.png");
+}
+
+.caseStudyBackground{
+    height: 470px;
+    width: 100%;
+    max-width: 1030px;
+    border-radius: 220px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.logo {
+    width: 40%;
+    padding: 1%;
+    /*background-color:lightblue;*/
+}
+}
+
+
+
+/* 
 @media only all and (max-width:700px) {
 
     .content {
@@ -316,6 +416,6 @@ button {
         margin:5%;
         
     }
-
+ */
 
 }
